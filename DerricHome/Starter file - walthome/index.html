@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derrichome</title>
+    <meta name="title" content="Derrichome">
+    <meta name="description" content="This is a real estate website developed by Derric">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0..1,0" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script type="module" src="./assets/js/script.js"></script>
+</head>
+<body>
+    
+    <header class="header" data-header>
+        <div class="container">
+            <a href="#" class="logo">
+              <img src="./assets/images/logo.png" width="190" height="28" alt="Derrichome">
+            </a>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+                    <li><a href="#" class="navbar-link label-medium active">Home</a></li>
+                    <li><a href="#" class="navbar-link label-medium">Rent</a></li>
+                    <li><a href="#" class="navbar-link label-medium">Sell</a></li>
+                    <li><a href="#" class="navbar-link label-medium">Buy</a></li>
+                    <li><a href="#" class="navbar-link label-medium">About</a></li>
+                </ul>
+                <div class="navbar-wrapper">
+                    <a href="#" class="btn-link label-medium">Login</a>
+                    <a href="#" class="btn btn-outline label-medium">Get started</a>
+                </div>
+            </nav>
+
+            <button class="nav-toggle-btn icon-btn" aria-label="toggle navbar" data-nav-toggler>
+                <span class="material-symbols-rounded open" aria-hidden="true">menu</span>
+                <span class="material-symbols-rounded close" aria-hidden="true">close</span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <article>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="headline-large hero-title">Find a place where you can be yourself.</h1>
+                        <p class="body-large hero-text">If you're looking for a place where you can be yourself, don't give up. Keep searching until you find a place that feels like home.</p>
+                        <form action="./" method="get" class="search-bar">
+                            <label for="action" class="search-item">
+                                <span class="label-medium label">want to</span>
+                                <select id="action" name="action" class="search-item-field body-medium">
+                                    <option value="buy">Buy</option>
+                                    <option value="sell">Sell</option>
+                                    <option value="rent">Rent</option>
+                                </select>
+                                <span class="material-symbols-rounded" aria-hidden="true">real_estate_agent</span>
+                            </label>
+                            <label for="property-type" class="search-item">
+                                <span class="label-medium label">Property type</span>
+                                <select id="property-type" name="property-type" class="search-item-field body-medium">
+                                    <option value="any">Any</option>
+                                    <option value="houses">Houses</option>
+                                    <option value="apartments">Apartments</option>
+                                    <option value="townhome">Townhome</option>
+                                    <option value="bungalow">Bungalow</option>
+                                    <option value="loft">Loft</option>
+                                </select>
+                                <span class="material-symbols-rounded" aria-hidden="true">gite</span>
+                            </label>
+                            <label for="location" class="search-item">
+                                <span class="label-medium label">Location</span>
+                                <input type="text" id="location" name="Location" placeholder="Street, city, Zip..." class="search-item-field body-medium">
+                                <span class="material-symbols-rounded" aria-hidden="true">location_on</span>
+                            </label>
+                            <button type="submit" class="search-btn">
+                                <span class="material-symbols-rounded" aria-hidden="true">search</span>
+                                <span class="label-medium">Search</span>
+                            </button>
+                        </form>
+                    </div>
+                    <img src="./assets/images/hero.png" width="816" height="659" role="presentation" class="hero-banner">
+                    <img src="./assets/images/bg-pattern.png" width="1240" height="840" role="presentation" class="bg-pattern">
+                </div>
+            </section>
+            <section class="section property" aria-labelledby="property-label">
+                <div class="container">
+                    <div class="title-wrapper">
+                        <h2 class="section-title-headline-small">Best home in your city</h2>
+                        <p class="section-text body-large">
+                            A bungalow is a small, single-story house, often with a simple design, a low-pitched roof, and a front porch. It’s typically cozy and practical, ideal for small families or individuals.
+                        </p>
+                    </div>
+                    <a href="#" class="btn btn-outline">
+                        <span class="label-medium">Explore more</span>
+                        <span class="material-symbols-rounded" aria-hidden="true">arrow_outward</span>
+                    </a>
+                    <div class="property-list">
+                        <div class="card">
+                            <div class="card-banner">
+                                <figure class="img-holder" style="--width:585;--height:390;">
+                                    <img src="./assets/images/property-1.jpg" width="585" height="390" alt="COVA Home Realty" class="img-cover">
+                                </figure>
+                                <span class="badge label-medium">New</span>
+                                <button class="icon-btn fav-btn" aria-label="add to favorite">
+                                    <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                </button>
+                            </div>
+                            <div class="card-content">
+                                <span class="title-large">700100.68 INR</span>
+                                <h3>
+                                    <a href="#" class="title-small card-title">COVA Home Realty</a>
+                                    <address class="body-medium card-text">
+                                        1901 Thornridge Cir. Shiloh, bangalore 81063
+                                    </address>
+                                    <div class="card-meta-list"> <!-- Changed from card-meta-li -->
+                                        <div class="meta-item">
+                                            <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span>
+                                            <span class="meta-text label-medium">3 Bed</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span>
+                                            <span class="meta-text label-medium">2 bath</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span>
+                                            <span class="meta-text label-medium">1430 sqft</span>
+                                        </div>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-banner">
+                                <figure class="img-holder" style="--width:585;--height:390;">
+                                    <img src="./assets/images/property-2.jpg" width="585" height="390" alt="Exit Realty" class="img-cover">
+                                </figure>
+                                <span class="badge label-medium">New</span>
+                                <button class="icon-btn fav-btn" aria-label="add to favorite">
+                                    <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                </button>
+                            </div>
+                            <div class="card-content">
+                                <span class="title-large">$6300000.44 INR</span>
+                                <h3>
+                                    <a href="#" class="title-small card-title">Exit Realty</a>
+                                    <address class="body-medium card-text">
+                                        2972 Westheimer Rd. Santa Ana, chennai 85486
+                                    </address>
+                                    <div class="card-meta-list"> <!-- Changed from card-meta-li -->
+                                        <div class="meta-item">
+                                            <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span>
+                                            <span class="meta-text label-medium">5 Bed</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span>
+                                            <span class="meta-text label-medium">4 bath</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span>
+                                            <span class="meta-text label-medium">1630 sqft</span>
+                                        </div>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-banner">
+                                <figure class="img-holder" style="--width:585;--height:390;">
+                                    <img src="./assets/images/property-3.jpg" width="585" height="390" alt="The Real Estate Group" class="img-cover">
+                                </figure>
+                                <span class="badge label-medium">New</span>
+                                <button class="icon-btn fav-btn" aria-label="add to favorite">
+                                    <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                </button>
+                            </div>
+                            <div class="card-content">
+                                <span class="title-large">$7300000.44 INR</span>
+                                <h3>
+                                    <a href="#" class="title-small card-title">The Real Estate Group</a>
+                                    <address class="body-medium card-text">
+                                        2118 Thornridge Cir. Syracuse, kolkata 35624
+                                    </address>
+                                    <div class="card-meta-list"> <!-- Changed from card-meta-li -->
+                                        <div class="meta-item">
+                                            <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span>
+                                            <span class="meta-text label-medium">8 Bed</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span>
+                                            <span class="meta-text label-medium">5 bath</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span>
+                                            <span class="meta-text label-medium">1240 sqft</span>
+                                        </div>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-banner">
+                                <figure class="img-holder" style="--width:585;--height:390;">
+                                    <img src="./assets/images/property-4.jpg" width="585" height="390" alt="757 Realty" class="img-cover">
+                                </figure>
+                                <span class="badge label-medium">New</span>
+                                <button class="icon-btn fav-btn" aria-label="add to favorite">
+                                    <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                </button>
+                            </div>
+                            <div class="card-content">
+                                <span class="title-large">$80300000.44 INR</span>
+                                <h3>
+                                    <a href="#" class="title-small card-title">757 Realty</a>
+                                    <address class="body-medium card-text">
+                                        4140 Parker Rd. Allentown, Mumbai 31134
+                                    </address>
+                                    <div class="card-meta-list"> <!-- Changed from card-meta-li -->
+                                        <div class="meta-item">
+                                            <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span>
+                                            <span class="meta-text label-medium">6 Bed</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span>
+                                            <span class="meta-text label-medium">6 bath</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span>
+                                            <span class="meta-text label-medium">1260 sqft</span>
+                                        </div>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-banner">
+                                <figure class="img-holder" style="--width:585;--height:390;">
+                                    <img src="./assets/images/property-5.jpg" width="585" height="390" alt="Beach Pros Realty Inc." class="img-cover">
+                                </figure>
+                                <span class="badge label-medium">New</span>
+                                <button class="icon-btn fav-btn" aria-label="add to favorite">
+                                    <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                </button>
+                            </div>
+                            <div class="card-content">
+                                <span class="title-large">$30300000.44 INR</span>
+                                <h3>
+                                    <a href="#" class="title-small card-title">Beach Pros Realty Inc.</a>
+                                    <address class="body-medium card-text">
+                                        715 Ash Dr. San Jose, New Delhi 83475                                  
+                                    </address>
+                                    <div class="card-meta-list"> <!-- Changed from card-meta-li -->
+                                        <div class="meta-item">
+                                            <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span>
+                                            <span class="meta-text label-medium">10 Bed</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span>
+                                            <span class="meta-text label-medium">8 bath</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span>
+                                            <span class="meta-text label-medium">2330 sqft</span>
+                                        </div>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-banner">
+                                <figure class="img-holder" style="--width:585;--height:390;">
+                                    <img src="./assets/images/property-6.jpg" width="585" height="390" alt="Keller Williams Elite Town Center" class="img-cover">
+                                </figure>
+                                <span class="badge label-medium">New</span>
+                                <button class="icon-btn fav-btn" aria-label="add to favorite">
+                                    <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                </button>
+                            </div>
+                            <div class="card-content">
+                                <span class="title-large">$703000.44 INR</span>
+                                <h3>
+                                    <a href="#" class="title-small card-title">Keller Williams Elite Town Center</a>
+                                    <address class="body-medium card-text">
+                                        3517 W. Gray St. Utica, hyderabad 57867                               
+                                    </address>
+                                    <div class="card-meta-list"> <!-- Changed from card-meta-li -->
+                                        <div class="meta-item">
+                                            <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span>
+                                            <span class="meta-text label-medium">8 Bed</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span>
+                                            <span class="meta-text label-medium">8 bath</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span>
+                                            <span class="meta-text label-medium">1950 sqft</span>
+                                        </div>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+   
+                        <div class="card">
+                            <div class="card-banner">
+                                <figure class="img-holder" style="--width:585;--height:390;">
+                                    <img src="./assets/images/property-7.jpg" width="585" height="390" alt="All Pros Real Estate" class="img-cover">
+                                </figure>
+                                <span class="badge label-medium">New</span>
+                                <button class="icon-btn fav-btn" aria-label="add to favorite">
+                                    <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                </button>
+                            </div>
+                            <div class="card-content">
+                                <span class="title-large">$303000.44 INR</span>
+                                <h3>
+                                    <a href="#" class="title-small card-title">All Pros Real Estate</a>
+                                    <address class="body-medium card-text">
+                                        8502 Preston Rd. Inglewood, goa 98380                             
+                                    </address>
+                                    <div class="card-meta-list"> <!-- Changed from card-meta-li -->
+                                        <div class="meta-item">
+                                            <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span>
+                                            <span class="meta-text label-medium">4 Bed</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span>
+                                            <span class="meta-text label-medium">4 bath</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span>
+                                            <span class="meta-text label-medium">1580 sqft</span>
+                                        </div>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-banner">
+                                <figure class="img-holder" style="--width:585;--height:390;">
+                                    <img src="./assets/images/property-8.jpg" width="585" height="390" alt="FIT Realty" class="img-cover">
+                                </figure>
+                                <span class="badge label-medium">New</span>
+                                <button class="icon-btn fav-btn" aria-label="add to favorite">
+                                    <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                </button>
+                            </div>
+                            <div class="card-content">
+                                <span class="title-large">$303000.44 INR</span>
+                                <h3>
+                                    <a href="#" class="title-small card-title">FIT Realty</a>
+                                    <address class="body-medium card-text">
+                                        4517 Washington Ave. Manchester, bangalore 39495                          
+                                    </address>
+                                    <div class="card-meta-list"> <!-- Changed from card-meta-li -->
+                                        <div class="meta-item">
+                                            <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span>
+                                            <span class="meta-text label-medium">3 Bed</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span>
+                                            <span class="meta-text label-medium">2 bath</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span>
+                                            <span class="meta-text label-medium">1280 sqft</span>
+                                        </div>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section feature" aria-labelledby="feature-label">
+                <div class="container">
+                    <figure class="feature-banner">
+                        <img src="./assets/images/feature-banner-1.jpg" width="1020" height="690" loading="lazy"
+                         class="img-cover" alt="feature banner">
+                    </figure>
+                    <div class="feature-conte">
+                        <h2 class="headline-medium" id="feature-label">We Specialize In Quality Home Renovations</h2>
+                        <p class="body-large feature-text">Looking to renovate your home to reflect your style and personality? Look no further than our team of experts who specialize in quality home renovations to transform your space into a dream home you’ll love. From design to execution.
+                        </p>
+                        <ul class="feature-list">
+                            <li class="feature-item">
+                                <span class="material-symbols-rounded feature-icon" aria-hidden="true">check_circle</span>
+                                <span class="body-medium">Smart Home</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="material-symbols-rounded feature-icon" aria-hidden="true">check_circle</span>
+                                <span class="body-medium">Beautiful Scene Around</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="material-symbols-rounded feature-icon" aria-hidden="true">check_circle</span>
+                                <span class="body-medium">Exceptional lifestyle</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="material-symbols-rounded feature-icon" aria-hidden="true">check_circle</span>
+                                <span class="body-medium">Complete 24/7 Security</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section feature feature-2" aria-labelledby="feature-label-2">
+                <div class="container">
+                    <figure class="feature-banner">
+                        <img src="./assets/images/feature-banner-2.jpg" width="1020" height="690" loading="lazy"
+                         class="img-cover" alt="feature banner">
+                    </figure>
+                    <div class="feature-conte">
+                        <h2 class="headline-medium" id="feature-label-2">We Are Experts In Historic Home Renovations
+                        </h2>
+                        <p class="body-large feature-text">Looking to renovate your home to reflect your style and personality? Look no further than our team of experts who specialize in quality home renovations to transform your space into a dream home you’ll love. From design to execution.
+
+                        </p>
+                        <ul class="feature-list">
+                            <li class="feature-item">
+                                <span class="material-symbols-rounded feature-icon" aria-hidden="true">check_circle</span>
+                                <span class="body-medium">Smart Home</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="material-symbols-rounded feature-icon" aria-hidden="true">check_circle</span>
+                                <span class="body-medium">Beautiful Scene Around</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="material-symbols-rounded feature-icon" aria-hidden="true">check_circle</span>
+                                <span class="body-medium">Exceptional lifestyle</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="material-symbols-rounded feature-icon" aria-hidden="true">check_circle</span>
+                                <span class="body-medium">Complete 24/7 Security</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section video">
+                <div class="container">
+                    <div class="video-card">
+                        <button class="play-btn" aria-label="play video">
+                            <span class="material-symbols-rounded" aria-hidden="true">play_arrow</span>
+
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="section story">
+                <div class="container">
+                    <div class="title-wrapper">
+                        <div>
+                            <p class="section-subtitle title-medium">Our Customers</p>
+                            <h2 class="section-title headline-medium">We Help 1000+ Families Find Their True Home</h2>
+                            <ul class="avatar-list">
+                                <li class="avatar">
+                                    <img src="./assets/images/avatar-1.jpg" width="120" height="80" alt="Nishant" loading="lazy" class="img-cover">
+                                </li>
+                                <li class="avatar">
+                                    <img src="./assets/images/avatar-2.jpg" width="120" height="80" alt="Manikya" loading="lazy" class="img-cover">
+                                </li>
+                                <li class="avatar">
+                                    <img src="./assets/images/avatar-3.jpg" width="120" height="80" alt="Joel" loading="lazy" class="img-cover">
+                                </li>
+                                <li class="avatar">
+                                    <img src="./assets/images/avatar-4.jpg" width="120" height="80" alt="Jack" loading="lazy" class="img-cover">
+                                    <div class="overlay-content">
+                                        <span class="label-medium">99+</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn btn-outline">
+                            <span class="label-medium">View All Stories</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">arrow_outward</span>
+                        </a>
+                    </div>
+                    <ul class="story-list">
+                        <li class="story-card" style="background-image:url('./assets/images/story-1.jpg')">
+                            <a href="" class="overlay-content">
+                                <div class="rating-wrapper">
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <data value="5" class="title-small rating-text">5.0</data>
+                                </div>
+                                <h3 class="title-small">Chris Traeger</h3>
+                                <figure class="card-avatar">
+                                    <img src="./assets/images/story-avatar-1.jpg" width="56" height="56" loading="lazy" alt="Chris Traeger" class="img-cover">
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="story-card" style="background-image:url('./assets/images/story-2.jpg')">
+                            <a href="" class="overlay-content">
+                                <div class="rating-wrapper">
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <data value="5" class="title-small rating-text">5.0</data>
+                                </div>
+                                <h3 class="title-small">Duke Silver</h3>
+                                <figure class="card-avatar">
+                                    <img src="./assets/images/story-avatar-2.jpg" width="56" height="56" loading="lazy" alt="Duke Silver" class="img-cover">
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="story-card" style="background-image:url('./assets/images/story-3.jpg')">
+                            <a href="" class="overlay-content">
+                                <div class="rating-wrapper">
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <data value="5" class="title-small rating-text">5.0</data>
+                                </div>
+                                <h3 class="title-small">Tsukasa Aoi</h3>
+                                <figure class="card-avatar">
+                                    <img src="./assets/images/story-avatar-3.jpg" width="56" height="56" loading="lazy" alt="Tsukasa Aoi" class="img-cover">
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="story-card" style="background-image:url('./assets/images/story-4.jpg')">
+                            <a href="" class="overlay-content">
+                                <div class="rating-wrapper">
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <data value="5" class="title-small rating-text">5.0</data>
+                                </div>
+                                <h3 class="title-small">Freida Varnes</h3>
+                                <figure class="card-avatar">
+                                    <img src="./assets/images/story-avatar-4.jpg" width="56" height="56" loading="lazy" alt="Freida Varnes" class="img-cover">
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="story-card" style="background-image:url('./assets/images/story-5.jpg')">
+                            <a href="" class="overlay-content">
+                                <div class="rating-wrapper">
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <data value="5" class="title-small rating-text">5.0</data>
+                                </div>
+                                <h3 class="title-small">Carl Lorthner</h3>
+                                <figure class="card-avatar">
+                                    <img src="./assets/images/story-avatar-5.jpg" width="56" height="56" loading="lazy" alt="Carl Lorthner" class="img-cover">
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="story-card" style="background-image:url('./assets/images/story-6.jpg')">
+                            <a href="" class="overlay-content">
+                                <div class="rating-wrapper">
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <span class="material-symbols-rounded active" aria-hidden="true">star</span>
+                                    <data value="5" class="title-small rating-text">5.0</data>
+                                </div>
+                                <h3 class="title-small">Marci Senter</h3>
+                                <figure class="card-avatar">
+                                    <img src="./assets/images/story-avatar-6.jpg" width="56" height="56" loading="lazy" alt="Marci Senter" class="img-cover">
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </article>
+    </main>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="./assets/images/logo.png" width="190" height="28" alt="wealthome">
+                    </a>
+                    <p class="body-medium footer-text">Awaken. Evolve. Transcend...</p>
+                </div>
+                <nav class="footer-nav" aria-labelledby="nav-label-1">
+                    <p class="title-small footer-list-title" id="nav-label-1">Quick link</p>
+                    <ul class="footer-list">
+                        <li><a href="#" class="body-medium footer-link">Home</a></li>
+                        <li><a href="#" class="body-medium footer-link">Buy</a></li>
+                        <li><a href="#" class="body-medium footer-link">Sell</a></li>
+                        <li><a href="#" class="body-medium footer-link">Rent</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav" aria-labelledby="nav-label-2">
+                    <p class="title-small footer-list-title" id="nav-label-2">Support</p>
+                    <ul class="footer-list">
+                        <li><a href="#" class="body-medium footer-link">About us</a></li>
+                        <li><a href="#" class="body-medium footer-link">Contact us</a></li>
+                        <li><a href="#" class="body-medium footer-link">Privacy Policy</a></li>
+                        <li><a href="#" class="body-medium footer-link">Terms & Conditions</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav" aria-labelledby="nav-label-3">
+                    <p class="title-small footer-list-title" id="nav-label-3">Get in touch</p>
+                    <ul class="footer-list">
+                        <li><a href="mailto:hello@wealthome.com" class="body-medium footer-link">hello@wealthome.com</a></li>
+                        <li><address class="address body-medium">4140 Parker Rd. Allentown, New Mexico 31134</address></li>
+                        <li>
+                            <ul class="social-list">
+                                <li><a href="#" class="social-link"><img src="./assets/images/facebook.svg" alt="facebook"></a></li>
+                                <li><a href="#" class="social-link"><img src="./assets/images/insta.svg" alt="instagram"></a></li>
+                                <li><a href="#" class="social-link"><img src="./assets/images/twitter.svg" alt="twitter"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copy-right body-medium">Copyright 2023 derric the goat</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
